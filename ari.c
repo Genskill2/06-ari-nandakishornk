@@ -9,7 +9,7 @@
 
 string ari(string s)
 {
-	int i,c=0,w=0,st=0;
+	int i,c=0,w=1,st=0;
 	for(i=0;s[i]!='\0';i++)
 	{
 		if(isalnum(s[i])==1)
