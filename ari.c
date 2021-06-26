@@ -9,18 +9,17 @@
 
 string ari(string s)
 {
-	return "Eleventh Grade";
-/*	int i,c=0,w=0,st=0;
+	int i,c=0,w=0,st=0;
 	for(i=0;s[i]!='\0';i++)
 	{
 		if(isalnum(s[i])==1)
-			c++;
+			c=c+1;
 		if(s[i]==' ')
-			w++;
-		if(s[i]=='.' || s[i]=='?' || s[i]=='!')
-			st++;
+			w=w+1;
+		if(s[i]=='.'||s[i]=='?'||s[i]=='!')
+			st=st+1;
 	}
-	float r=4.71*(c/w)+0.5*(w/st)-21.43;
+	float r=4.71*(float(c)/w)+0.5*(float(w)/st)-21.43;
 	if(r-roundf(r)>=0.5)	
 		r=roundf(r);
 	else
@@ -52,5 +51,5 @@ string ari(string s)
 	else if(r<=24.0)
 		return "College student";
 	else
-		return "Professor";*/
+		return "Professor";
 }
