@@ -19,7 +19,7 @@ string ari(string s)
 		if((s[i] == '.' && s[i+1] == '\0') || (s[i] == '.' && s[i+1] == ' ') || s[i] == '!' || s[i] == '?')
 			st=st+1;
 	}
-	float r1=4.71*(c/w)+0.5*(w/st)-21.43;
+	float r1=(4.71*(c/w))+(0.5*(w/st))-21.43;
 	int r=(int)r1;
 	if(r==1)
 		return "Kindergarten";
