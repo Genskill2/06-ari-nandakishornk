@@ -20,36 +20,32 @@ string ari(string s)
 			st=st+1;
 	}
 	float r=4.71*((float)c/w)+0.5*((float)w/st)-21.43;
-	if(r-roundf(r)>=0.5)	
-		r=roundf(r);
-	else
-		r=roundf(r)+1;
-	if(r==1.0)
+	if(r<=1.0)
 		return "Kindergarten";
-	else if(r==2.0)
+	else if(r<=2.0)
 		return "First/Second Grade";
-	else if(r==3.0)
+	else if(r<=3.0)
 		return "Third Grade";
-	else if(r==4.0)
+	else if(r<=4.0)
 		return "Fourth Grade";
-	else if(r==5.0)
+	else if(r<=5.0)
 		return "Fifth Grade";
-	else if(r==6.0)
+	else if(r<=6.0)
 		return "Sixth Grade";
-	else if(r==7.0)
+	else if(r<=7.0)
 		return "Seventh Grade";
-	else if(r==8.0)
+	else if(r<=8.0)
 		return "Eighth Grade";
-	else if(r==9.0)
+	else if(r<=9.0)
 		return "Ninth Grade";
-	else if(r==10.0)
+	else if(r<=10.0)
 		return "Tenth Grade";
-	else if(r==11.0)
+	else if(r<=11.0)
 		return "Eleventh Grade";
-	else if(r==12.0)
+	else if(r<=12.0)
 		return "Twelfth grade";
-	else if(r==13.0)
+	else if(r<=13.0)
 		return "College student";
-	else
+	else if(r<=14.0)
 		return "Professor";
 }
