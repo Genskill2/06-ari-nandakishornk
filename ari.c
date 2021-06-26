@@ -1,6 +1,10 @@
-#include<stdio.h>
-#include<ctype.h>
-#include<math.h>
+#include <stdio.h>
+#include <ctype.h>
+#include <math.h>
+#include <assert.h>
+#include <string.h>
+#include <cs50.h>
+
 
 
 string ari(string s)
