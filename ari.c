@@ -25,7 +25,7 @@ string ari(string s)
 	else
 		r=roundf(r)+1;
 	if(r==1.0)
-		return "Error";
+		return "Kindergarten";
 	else if(r==2.0)
 		return "First/Second Grade";
 	else if(r==3.0)
@@ -50,6 +50,6 @@ string ari(string s)
 		return "Twelfth grade";
 	else if(r==13.0)
 		return "College student";
-	else if(r==14.0)
+	else
 		return "Professor";
 }
