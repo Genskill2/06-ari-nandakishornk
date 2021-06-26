@@ -10,7 +10,7 @@
 string ari(string s)
 {
 	float c=0.0,w=1.0,st=0.0;
-	for(int i=0;s[i]!='\0';i++)
+	for(int i=0;i<strlen(s);i++)
 	{
 		if(isalnum(s[i])==1)
 			c=c+1;
