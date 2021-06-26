@@ -46,6 +46,6 @@ string ari(string s)
 		return "Twelfth grade";
 	else if(r<=13.0)
 		return "College student";
-	else if(r<=14.0)
+	else
 		return "Professor";
 }
