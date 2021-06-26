@@ -19,7 +19,7 @@ string ari(string s)
 		if(s[i]=='.'||s[i]=='?'||s[i]=='!')
 			st=st+1;
 	}
-	float r=4.71*(c/w)+0.5*(w/st)-21.43;
+	float r=4.71*((float)c/w)+0.5*((float)w/st)-21.43;
 	if(r-roundf(r)>=0.5)	
 		r=roundf(r);
 	else
@@ -50,6 +50,6 @@ string ari(string s)
 		return "Twelfth grade";
 	else if(r==13.0)
 		return "College student";
-	else
+	else if(r==14.0)
 		return "Professor";
 }
