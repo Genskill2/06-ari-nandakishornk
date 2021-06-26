@@ -19,7 +19,7 @@ string ari(string s)
 		if(s[i]=='.'||s[i]=='?'||s[i]=='!')
 			st=st+1;
 	}
-	float r=4.71*(float(c)/w)+0.5*(float(w)/st)-21.43;
+	float r=4.71*((float(c))/w)+0.5*((float(w))/st)-21.43;
 	if(r-roundf(r)>=0.5)	
 		r=roundf(r);
 	else
