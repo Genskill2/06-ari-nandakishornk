@@ -9,17 +9,17 @@
 
 string ari(string s)
 {
-	int i,c=0,w=1,st=0;
-	for(i=0;s[i]!='\0';i++)
+	float c=0.0,w=1.0,st=0.0;
+	for(int i=0;s[i]!='\0';i++)
 	{
 		if(isalnum(s[i])==1)
 			c=c+1;
 		if(s[i]==' ')
 			w=w+1;
-		if(s[i]=='.'||s[i]=='?'||s[i]=='!')
+		if((s[i] == '.' && s[i+1] == '\0') || (s[i] == '.' && s[i+1] == ' ') || s[i] == '!' || s[i] == '?')
 			st=st+1;
 	}
-	float r=4.71*((float)c/w)+0.5*((float)w/st)-21.43;
+	float r=4.71*(c/w)+0.5*(w/st)-21.43;
 	if(r<=1.0)
 		return "Kindergarten";
 	else if(r<=2.0)
