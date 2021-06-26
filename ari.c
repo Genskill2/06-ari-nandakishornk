@@ -9,7 +9,8 @@
 
 string ari(string s)
 {
-	int i,c=0,w=0,st=0;
+	return "Eleventh Grade";
+/*	int i,c=0,w=0,st=0;
 	for(i=0;s[i]!='\0';i++)
 	{
 		if(isalnum(s[i])==1)
@@ -51,5 +52,5 @@ string ari(string s)
 	else if(r<=24.0)
 		return "College student";
 	else
-		return "Professor";
+		return "Professor";*/
 }
